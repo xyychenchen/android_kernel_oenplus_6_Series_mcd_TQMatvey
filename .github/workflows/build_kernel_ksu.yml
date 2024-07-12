@@ -46,7 +46,7 @@ jobs:
       run: |
         rm -rf KernelSU
         rm -rf drivers/kernelsu
-        curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s main
+        curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s v0.9.5
         bash build_kernel_github.sh
 
     - name: Upload Kernel-with KernelSU
