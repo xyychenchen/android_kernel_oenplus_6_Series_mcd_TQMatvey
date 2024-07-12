@@ -41,9 +41,9 @@ seconds=$((duration % 60))
 # 打印运行时间
 echo "脚本运行时间为：${hours}小时 ${minutes}分钟 ${seconds}秒"
 
-if [ -f out/arch/arm64/boot/Image.gz-dtb ]; then
+if [ -f out/arch/arm64/boot/Image ]; then
 	echo "***Packing kernel...***"
-	cp out/arch/arm64/boot/Image.gz-dtb tools/AnyKernel3/Image.gz-dtb
+	cp out/arch/arm64/boot/Image tools/AnyKernel3/Image
 	cd tools/AnyKernel3
 	echo "***Sucessfully built kernel...***"
 	echo " "
